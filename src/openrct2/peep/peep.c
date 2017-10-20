@@ -205,7 +205,11 @@ const char *gPeepEasterEggNames[] = {
     "KATIE SMITH",
     "EILIDH BELL",
     "NANCY STILLWAGON",
-    "DAVID ELLIS"
+    "DAVID ELLIS",
+	"Ariana Bishop",
+	"Taylor McRae",
+	"Daniel Hoog",
+	"Rashed Almazrouei"
 };
 
 /** rct2: 0x00981DB0 */
@@ -213,6 +217,7 @@ static struct {
     uint8 action;
     uint8 flags;
 } PeepThoughtToActionMap[] = {
+
     { PEEP_ACTION_SHAKE_HEAD, 1 },
     { PEEP_ACTION_EMPTY_POCKETS, 0 },
     { PEEP_ACTION_NONE_2, 0 },
