@@ -1265,7 +1265,8 @@ static void window_map_place_park_entrance_tool_update(sint32 x, sint32 y)
 	gMapSelectArrowPosition.z = mapZ * 16;
 	gMapSelectArrowDirection = direction;
 
-	gMapSelectFlags |= MAP_SELECT_FLAG_ENABLE_CONSTRUCT | MAP_SELECT_FLAG_ENABLE_ARROW;
+	gMapSelectFlags |= MAP_SELECT_FLAG_ENABLE_CONSTRUCT; 
+	gMapSelectFlags |= MAP_SELECT_FLAG_ENABLE_ARROW;
 
     map_invalidate_map_selection_tiles();
     if (
