@@ -33,6 +33,7 @@
 
 #define PEEP_MAX_HAPPINESS 255
 #define PEEP_MAX_ENERGY    128
+#define PEEP_MIN_ENERGY    4
 
 enum PEEP_TYPE {
     PEEP_TYPE_GUEST,
