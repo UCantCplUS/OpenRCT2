@@ -301,19 +301,19 @@ static void window_all_wheel_input()
     sint32 raw = context_get_cursor_state()->wheel;
     sint32 wheel = 0;
     while (1) {
-        raw -= 120;
+        raw -= 128;
         if (raw < 0)
             break;
         wheel -= 17;
     }
-    raw += 120;
+    raw += 128;
     while (1) {
-        raw += 120;
+        raw += 128;
         if (raw > 0)
             break;
         wheel += 17;
     }
-    raw -= 120;
+    raw -= 128;
 
     // TODO do something about this hack
     CursorState * cursorState = (CursorState *)context_get_cursor_state();
