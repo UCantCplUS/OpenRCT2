@@ -1314,7 +1314,7 @@ static void sub_68F41A(rct_peep *peep, sint32 index)
         energy = 32;
 
     /* Previous code here suggested maximum energy is 128. */
-    energy = min(PEEP_MAX_ENERGY, energy);
+    energy = max(PEEP_MAX_ENERGY, energy);
 
     if (energy != peep->energy){
         peep->energy = energy;
