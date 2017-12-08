@@ -1305,7 +1305,7 @@ static void sub_68F41A(rct_peep *peep, sint32 index)
             energy = energy_growth;
     }
     else{
-        energy = min(PEEP_MIN_ENERGY, energy);
+        energy = min(255, energy + 4);
         if (energy > energy_growth)
             energy = energy_growth;
     }
